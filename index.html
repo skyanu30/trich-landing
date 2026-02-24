@@ -9,114 +9,101 @@
 
 <style>
 
-body {
-    margin:0;
-    background-color:#000;
-    color:#d4af37;
-    font-family:'Montserrat', sans-serif;
-    scroll-behavior:smooth;
+body{
+margin:0;
+background:black;
+color:#d4af37;
+font-family:'Montserrat',sans-serif;
+overflow-x:hidden;
 }
 
-section {
-    padding:90px 12%;
-    text-align:center;
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background: radial-gradient(circle at center,#1a1a1a 0%,#000 70%);
 }
 
-h1, h2, h3 {
-    font-family:'Playfair Display', serif;
-    margin-bottom:20px;
+.hero h1{
+font-size:60px;
+margin:0;
+animation: glow 2s infinite alternate;
 }
 
-.hero {
-    height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    background: radial-gradient(circle at top, #1a1a1a 0%, #000 70%);
+@keyframes glow{
+from{ text-shadow:0 0 10px #d4af37;}
+to{ text-shadow:0 0 25px #ffd700;}
 }
 
-.hero h1 {
-    font-size:60px;
-    margin:0;
+section{
+padding:80px 10%;
+text-align:center;
 }
 
-.hero h2 {
-    font-weight:400;
-    color:#ccc;
-    margin-top:10px;
+.gold-line{
+width:120px;
+height:2px;
+background:#d4af37;
+margin:25px auto;
 }
 
-.gold-line {
-    width:120px;
-    height:2px;
-    background:#d4af37;
-    margin:25px auto;
+.card-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:40px;
+margin-top:50px;
 }
 
-p {
-    max-width:800px;
-    margin:auto;
-    color:#bbb;
-    line-height:1.7;
+.card{
+background:#111;
+padding:30px;
+width:320px;
+border:1px solid #d4af37;
+border-radius:10px;
+transition:0.4s;
 }
 
-.cards {
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:40px;
-    margin-top:50px;
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 30px rgba(212,175,55,0.4);
 }
 
-.card {
-    background:#111;
-    padding:40px;
-    width:300px;
-    border:1px solid #d4af37;
-    border-radius:8px;
-    transition:0.3s ease;
+.card img{
+width:100%;
+border-radius:8px;
+margin-bottom:20px;
 }
 
-.card:hover {
-    transform:translateY(-10px);
-    box-shadow:0 0 30px rgba(212,175,55,0.3);
+ul{
+text-align:left;
+color:#ccc;
+line-height:1.7;
 }
 
-.card h3 {
-    margin-top:0;
+button{
+padding:15px 45px;
+font-size:16px;
+font-weight:600;
+background:#d4af37;
+border:none;
+border-radius:5px;
+cursor:pointer;
+transition:0.3s;
 }
 
-ul {
-    text-align:left;
-    padding-left:20px;
-    color:#ccc;
-    line-height:1.8;
+button:hover{
+background:#b9972e;
 }
 
-button {
-    padding:15px 45px;
-    font-size:16px;
-    font-weight:600;
-    background:#d4af37;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-button:hover {
-    background:#b9972e;
-}
-
-.cta {
-    background:#111;
-}
-
-footer {
-    padding:30px;
-    border-top:1px solid #222;
-    color:#777;
+footer{
+padding:30px;
+text-align:center;
+border-top:1px solid #222;
+color:#777;
 }
 
 </style>
@@ -124,100 +111,89 @@ footer {
 
 <body>
 
-<section class="hero">
-    <h1>TRICH</h1>
-    <div class="gold-line"></div>
-    <h2>Health • Wealth • Purpose</h2>
-    <p>Performance & Life Architecture for High-Achieving Professionals</p>
-    <br><br>
-    <a href="YOUR_APP_LINK_HERE">
-        <button>Start Diagnostic</button>
-    </a>
+<div class="hero">
+<h1>TRICH</h1>
+<div class="gold-line"></div>
+<h2>Health • Wealth • Purpose</h2>
+<p>Performance & Life Architecture for High-Achieving Professionals</p>
+</div>
+
+<section>
+<h2>What is TRICH?</h2>
+<div class="gold-line"></div>
+<p>
+TRICH is a performance and life architecture framework designed for high-achieving professionals who refuse to be successful in only one dimension of life.
+</p>
+<p>
+True wealth is multidimensional.
+</p>
 </section>
 
 <section>
-    <h2>What is TRICH?</h2>
-    <div class="gold-line"></div>
-    <p>
-    TRICH is a performance and life architecture framework designed for high-achieving professionals who refuse to be successful in only one dimension of life.
-    </p>
-    <br>
-    <p>
-    True wealth is multidimensional.
-    </p>
+<h2>The Three Pillars</h2>
+<div class="gold-line"></div>
+
+<div class="card-container">
+
+<div class="card">
+<img src="https://media.giphy.com/media/l0HlQ7LRalQqdWfao/giphy.gif">
+<h3>Health</h3>
+<ul>
+<li>Sustainable strength</li>
+<li>Metabolic health & longevity</li>
+<li>Mental resilience</li>
+<li>Daily discipline</li>
+</ul>
+<p><strong>Health is capacity.</strong></p>
+</div>
+
+<div class="card">
+<img src="https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif">
+<h3>Wealth</h3>
+<ul>
+<li>Income growth</li>
+<li>Asset ownership</li>
+<li>Relationship capital</li>
+<li>Professional positioning</li>
+</ul>
+<p><strong>Wealth is leverage.</strong></p>
+</div>
+
+<div class="card">
+<img src="https://media.giphy.com/media/xT5LMHxhOfscxPfIfm/giphy.gif">
+<h3>Purpose</h3>
+<ul>
+<li>Contribution beyond self</li>
+<li>Mentorship</li>
+<li>Institution building</li>
+<li>Legacy impact</li>
+</ul>
+<p><strong>Purpose is meaning.</strong></p>
+</div>
+
+</div>
 </section>
 
 <section>
-    <h2>The Three Pillars</h2>
-    <div class="gold-line"></div>
-
-    <div class="cards">
-
-        <div class="card">
-            <h3>Health</h3>
-            <ul>
-                <li>Sustainable body composition and strength</li>
-                <li>Metabolic health and longevity</li>
-                <li>Mental resilience and emotional stability</li>
-                <li>Daily discipline and recovery</li>
-            </ul>
-            <p><strong>Health is not aesthetics. It is capacity.</strong></p>
-        </div>
-
-        <div class="card">
-            <h3>Wealth</h3>
-            <ul>
-                <li>Income growth and capital allocation</li>
-                <li>Asset ownership and intelligent risk</li>
-                <li>Relationship capital</li>
-                <li>Reputation and professional positioning</li>
-            </ul>
-            <p><strong>Money gives options. Relationships multiply options.</strong></p>
-        </div>
-
-        <div class="card">
-            <h3>Purpose</h3>
-            <ul>
-                <li>Contribution beyond self</li>
-                <li>Structured giving and mentorship</li>
-                <li>Building institutions, not just income</li>
-                <li>Creating impact that outlives you</li>
-            </ul>
-            <p><strong>Purpose converts achievement into meaning.</strong></p>
-        </div>
-
-    </div>
+<h2>The TRICH Standard</h2>
+<div class="gold-line"></div>
+<p>Each pillar is measurable. Each pillar is trainable. Each pillar compounds.</p>
+<p>The TRICH Diagnostic Score (0–120) evaluates where you stand today.</p>
+<p><strong>The goal is alignment.</strong></p>
 </section>
 
 <section>
-    <h2>The TRICH Standard</h2>
-    <div class="gold-line"></div>
-    <p>Each pillar is measurable. Each pillar is trainable. Each pillar compounds.</p>
-    <br>
-    <p>
-    The TRICH Diagnostic Score (0–120) evaluates where you stand today and highlights where disciplined growth is required.
-    </p>
-    <br>
-    <p><strong>The goal is not balance. The goal is alignment.</strong></p>
-    <br>
-    <p>
-    When Health fuels Wealth, and Wealth funds Purpose, life moves from success to significance.
-    </p>
-</section>
-
-<section class="cta">
-    <h2>Discover Your TRICH Score</h2>
-    <div class="gold-line"></div>
-    <br>
-    <a href="YOUR_APP_LINK_HERE">
-        <button>Know Your TRICH Score</button>
-    </a>
+<h2>Discover Your TRICH Score</h2>
+<div class="gold-line"></div>
+<br>
+<a href="YOUR_APP_LINK_HERE">
+<button>Start Diagnostic</button>
+</a>
 </section>
 
 <footer>
-    © 2026 TRICH | Triple Rich – Health, Wealth & Purpose
+© 2026 TRICH | Triple Rich – Health, Wealth & Purpose
 </footer>
 
 </body>
-
 </html>
