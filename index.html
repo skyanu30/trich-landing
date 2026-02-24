@@ -12,19 +12,18 @@
 body{
 margin:0;
 background:black;
-color:#d4af37;
 font-family:'Montserrat',sans-serif;
+color:#ccc;
 line-height:1.8;
 overflow-x:hidden;
 }
 
-/* HERO SECTION */
+/* HERO */
 
 .hero{
 height:100vh;
 background:url('https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3') center/cover no-repeat;
 display:flex;
-flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
@@ -38,7 +37,7 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background:rgba(0,0,0,0.7);
+background:rgba(0,0,0,0.75);
 }
 
 .hero-content{
@@ -47,22 +46,22 @@ z-index:2;
 }
 
 .logo{
-width:140px;
+width:130px;
 margin-bottom:20px;
 }
 
-.hero h1{
+h1{
 font-family:'Playfair Display',serif;
-font-size:55px;
-margin:0;
+font-size:60px;
 color:white;
-letter-spacing:1px;
+margin:0;
 }
 
-.hero h2{
-font-weight:300;
+h2{
+font-family:'Playfair Display',serif;
+font-size:36px;
 color:#d4af37;
-margin-top:10px;
+margin-bottom:20px;
 }
 
 .gold-line{
@@ -72,39 +71,29 @@ background:#d4af37;
 margin:25px auto;
 }
 
-/* CONTENT SECTIONS */
-
 section{
-padding:90px 12%;
+padding:100px 12%;
 text-align:center;
 background:black;
 }
 
-h2{
-font-family:'Playfair Display',serif;
-font-size:36px;
-margin-bottom:20px;
-}
-
 p{
-color:#ccc;
 max-width:850px;
 margin:15px auto;
 }
 
-/* Subtle Fade In Animation */
-
-.fade{
-opacity:0;
-transform:translateY(40px);
-animation:fadeUp 1.2s forwards;
+strong{
+color:#d4af37;
 }
 
-@keyframes fadeUp{
-to{
-opacity:1;
-transform:translateY(0);
-}
+/* Motion Blocks */
+
+.motion{
+height:300px;
+margin:40px 0;
+border-radius:10px;
+background-size:cover;
+background-position:center;
 }
 
 /* Footer */
@@ -121,16 +110,24 @@ color:#777;
 
 <body>
 
+<!-- HERO SECTION -->
+
 <div class="hero">
 <div class="hero-content">
-<img src="YOUR_LOGO_IMAGE_LINK_HERE" class="logo">
+
+<img src="./logo.png" class="logo" alt="TRICH Logo">
+
 <h1>TRICH (Triple Rich)</h1>
 <div class="gold-line"></div>
 <h2>Health , Wealth & Purpose</h2>
+
 </div>
 </div>
 
-<section class="fade">
+<!-- INTRO -->
+
+<section>
+
 <p>
 TRICH is a performance and life architecture framework designed for high-achieving professionals who refuse to be successful in only one dimension of life.
 </p>
@@ -144,15 +141,19 @@ Very few intentionally build all three pillars together.
 <p>
 TRICH is built on the belief that true wealth is multidimensional.
 </p>
+
 </section>
 
-<section class="fade">
+<!-- HEALTH -->
+
+<section>
+
 <h2>Health</h2>
 <div class="gold-line"></div>
 
-<p><strong>Without physical energy and mental clarity, achievement collapses.</strong></p>
+<div class="motion" style="background-image:url('https://media.giphy.com/media/3o7TKtnuHOHHUjR38Y/giphy.gif');"></div>
 
-<p>TRICH Health focuses on:</p>
+<p><strong>Without physical energy and mental clarity, achievement collapses.</strong></p>
 
 <p>
 Sustainable body composition and strength<br>
@@ -162,15 +163,19 @@ Daily discipline and recovery
 </p>
 
 <p><strong>Health is not aesthetics. It is capacity.</strong></p>
+
 </section>
 
-<section class="fade">
+<!-- WEALTH -->
+
+<section>
+
 <h2>Wealth</h2>
 <div class="gold-line"></div>
 
-<p><strong>Wealth is more than money. It is leverage and relationships.</strong></p>
+<div class="motion" style="background-image:url('https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif');"></div>
 
-<p>TRICH Wealth focuses on:</p>
+<p><strong>Wealth is more than money. It is leverage and relationships.</strong></p>
 
 <p>
 Income growth and capital allocation<br>
@@ -180,15 +185,19 @@ Reputation and professional positioning
 </p>
 
 <p><strong>Money gives options. Relationships multiply options.</strong></p>
+
 </section>
 
-<section class="fade">
+<!-- PURPOSE -->
+
+<section>
+
 <h2>Purpose</h2>
 <div class="gold-line"></div>
 
-<p><strong>Purpose transforms success into significance.</strong></p>
+<div class="motion" style="background-image:url('https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif');"></div>
 
-<p>TRICH Purpose focuses on:</p>
+<p><strong>Purpose transforms success into significance.</strong></p>
 
 <p>
 Contribution beyond self<br>
@@ -198,9 +207,13 @@ Creating impact that outlives you
 </p>
 
 <p><strong>Purpose converts achievement into meaning.</strong></p>
+
 </section>
 
-<section class="fade">
+<!-- STANDARD -->
+
+<section>
+
 <h2>The TRICH Standard</h2>
 <div class="gold-line"></div>
 
@@ -221,6 +234,7 @@ life moves from success to significance.
 </p>
 
 <p><strong>TRICH is not motivation. It is a system.</strong></p>
+
 </section>
 
 <footer>
