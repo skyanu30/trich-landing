@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TRICH | Triple Rich</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    margin:0;
+    background-color:#000;
+    color:#d4af37;
+    font-family:'Montserrat', sans-serif;
+    scroll-behavior:smooth;
+}
+
+section {
+    padding:90px 12%;
+    text-align:center;
+}
+
+h1, h2, h3 {
+    font-family:'Playfair Display', serif;
+    margin-bottom:20px;
+}
+
+.hero {
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background: radial-gradient(circle at top, #1a1a1a 0%, #000 70%);
+}
+
+.hero h1 {
+    font-size:60px;
+    margin:0;
+}
+
+.hero h2 {
+    font-weight:400;
+    color:#ccc;
+    margin-top:10px;
+}
+
+.gold-line {
+    width:120px;
+    height:2px;
+    background:#d4af37;
+    margin:25px auto;
+}
+
+p {
+    max-width:800px;
+    margin:auto;
+    color:#bbb;
+    line-height:1.7;
+}
+
+.cards {
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:40px;
+    margin-top:50px;
+}
+
+.card {
+    background:#111;
+    padding:40px;
+    width:300px;
+    border:1px solid #d4af37;
+    border-radius:8px;
+    transition:0.3s ease;
+}
+
+.card:hover {
+    transform:translateY(-10px);
+    box-shadow:0 0 30px rgba(212,175,55,0.3);
+}
+
+.card h3 {
+    margin-top:0;
+}
+
+ul {
+    text-align:left;
+    padding-left:20px;
+    color:#ccc;
+    line-height:1.8;
+}
+
+button {
+    padding:15px 45px;
+    font-size:16px;
+    font-weight:600;
+    background:#d4af37;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover {
+    background:#b9972e;
+}
+
+.cta {
+    background:#111;
+}
+
+footer {
+    padding:30px;
+    border-top:1px solid #222;
+    color:#777;
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+    <h1>TRICH</h1>
+    <div class="gold-line"></div>
+    <h2>Health • Wealth • Purpose</h2>
+    <p>Performance & Life Architecture for High-Achieving Professionals</p>
+    <br><br>
+    <a href="YOUR_APP_LINK_HERE">
+        <button>Start Diagnostic</button>
+    </a>
+</section>
+
+<section>
+    <h2>What is TRICH?</h2>
+    <div class="gold-line"></div>
+    <p>
+    TRICH is a performance and life architecture framework designed for high-achieving professionals who refuse to be successful in only one dimension of life.
+    </p>
+    <br>
+    <p>
+    True wealth is multidimensional.
+    </p>
+</section>
+
+<section>
+    <h2>The Three Pillars</h2>
+    <div class="gold-line"></div>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Health</h3>
+            <ul>
+                <li>Sustainable body composition and strength</li>
+                <li>Metabolic health and longevity</li>
+                <li>Mental resilience and emotional stability</li>
+                <li>Daily discipline and recovery</li>
+            </ul>
+            <p><strong>Health is not aesthetics. It is capacity.</strong></p>
+        </div>
+
+        <div class="card">
+            <h3>Wealth</h3>
+            <ul>
+                <li>Income growth and capital allocation</li>
+                <li>Asset ownership and intelligent risk</li>
+                <li>Relationship capital</li>
+                <li>Reputation and professional positioning</li>
+            </ul>
+            <p><strong>Money gives options. Relationships multiply options.</strong></p>
+        </div>
+
+        <div class="card">
+            <h3>Purpose</h3>
+            <ul>
+                <li>Contribution beyond self</li>
+                <li>Structured giving and mentorship</li>
+                <li>Building institutions, not just income</li>
+                <li>Creating impact that outlives you</li>
+            </ul>
+            <p><strong>Purpose converts achievement into meaning.</strong></p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>The TRICH Standard</h2>
+    <div class="gold-line"></div>
+    <p>Each pillar is measurable. Each pillar is trainable. Each pillar compounds.</p>
+    <br>
+    <p>
+    The TRICH Diagnostic Score (0–120) evaluates where you stand today and highlights where disciplined growth is required.
+    </p>
+    <br>
+    <p><strong>The goal is not balance. The goal is alignment.</strong></p>
+    <br>
+    <p>
+    When Health fuels Wealth, and Wealth funds Purpose, life moves from success to significance.
+    </p>
+</section>
+
+<section class="cta">
+    <h2>Discover Your TRICH Score</h2>
+    <div class="gold-line"></div>
+    <br>
+    <a href="YOUR_APP_LINK_HERE">
+        <button>Know Your TRICH Score</button>
+    </a>
+</section>
+
+<footer>
+    © 2026 TRICH | Triple Rich – Health, Wealth & Purpose
+</footer>
+
+</body>
+</html>
