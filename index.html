@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TRICH | Triple Rich</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 
@@ -14,33 +14,55 @@ margin:0;
 background:black;
 color:#d4af37;
 font-family:'Montserrat',sans-serif;
+line-height:1.8;
 overflow-x:hidden;
 }
 
+/* HERO SECTION */
+
 .hero{
 height:100vh;
+background:url('https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3') center/cover no-repeat;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-background: radial-gradient(circle at center,#1a1a1a 0%,#000 70%);
+position:relative;
+}
+
+.hero::after{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+}
+
+.logo{
+width:140px;
+margin-bottom:20px;
 }
 
 .hero h1{
-font-size:60px;
+font-family:'Playfair Display',serif;
+font-size:55px;
 margin:0;
-animation: glow 2s infinite alternate;
+color:white;
+letter-spacing:1px;
 }
 
-@keyframes glow{
-from{ text-shadow:0 0 10px #d4af37;}
-to{ text-shadow:0 0 25px #ffd700;}
-}
-
-section{
-padding:80px 10%;
-text-align:center;
+.hero h2{
+font-weight:300;
+color:#d4af37;
+margin-top:10px;
 }
 
 .gold-line{
@@ -50,57 +72,45 @@ background:#d4af37;
 margin:25px auto;
 }
 
-.card-container{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:40px;
-margin-top:50px;
+/* CONTENT SECTIONS */
+
+section{
+padding:90px 12%;
+text-align:center;
+background:black;
 }
 
-.card{
-background:#111;
-padding:30px;
-width:320px;
-border:1px solid #d4af37;
-border-radius:10px;
-transition:0.4s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-box-shadow:0 0 30px rgba(212,175,55,0.4);
-}
-
-.card img{
-width:100%;
-border-radius:8px;
+h2{
+font-family:'Playfair Display',serif;
+font-size:36px;
 margin-bottom:20px;
 }
 
-ul{
-text-align:left;
+p{
 color:#ccc;
-line-height:1.7;
+max-width:850px;
+margin:15px auto;
 }
 
-button{
-padding:15px 45px;
-font-size:16px;
-font-weight:600;
-background:#d4af37;
-border:none;
-border-radius:5px;
-cursor:pointer;
-transition:0.3s;
+/* Subtle Fade In Animation */
+
+.fade{
+opacity:0;
+transform:translateY(40px);
+animation:fadeUp 1.2s forwards;
 }
 
-button:hover{
-background:#b9972e;
+@keyframes fadeUp{
+to{
+opacity:1;
+transform:translateY(0);
 }
+}
+
+/* Footer */
 
 footer{
-padding:30px;
+padding:40px;
 text-align:center;
 border-top:1px solid #222;
 color:#777;
@@ -112,83 +122,105 @@ color:#777;
 <body>
 
 <div class="hero">
-<h1>TRICH</h1>
+<div class="hero-content">
+<img src="YOUR_LOGO_IMAGE_LINK_HERE" class="logo">
+<h1>TRICH (Triple Rich)</h1>
 <div class="gold-line"></div>
-<h2>Health • Wealth • Purpose</h2>
-<p>Performance & Life Architecture for High-Achieving Professionals</p>
+<h2>Health , Wealth & Purpose</h2>
+</div>
 </div>
 
-<section>
-<h2>What is TRICH?</h2>
-<div class="gold-line"></div>
+<section class="fade">
 <p>
 TRICH is a performance and life architecture framework designed for high-achieving professionals who refuse to be successful in only one dimension of life.
 </p>
+
 <p>
-True wealth is multidimensional.
+Most people optimize for income.  
+Some optimize for fitness.  
+Very few intentionally build all three pillars together.
+</p>
+
+<p>
+TRICH is built on the belief that true wealth is multidimensional.
 </p>
 </section>
 
-<section>
-<h2>The Three Pillars</h2>
+<section class="fade">
+<h2>Health</h2>
 <div class="gold-line"></div>
 
-<div class="card-container">
+<p><strong>Without physical energy and mental clarity, achievement collapses.</strong></p>
 
-<div class="card">
-<img src="https://media.giphy.com/media/l0HlQ7LRalQqdWfao/giphy.gif">
-<h3>Health</h3>
-<ul>
-<li>Sustainable strength</li>
-<li>Metabolic health & longevity</li>
-<li>Mental resilience</li>
-<li>Daily discipline</li>
-</ul>
-<p><strong>Health is capacity.</strong></p>
-</div>
+<p>TRICH Health focuses on:</p>
 
-<div class="card">
-<img src="https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif">
-<h3>Wealth</h3>
-<ul>
-<li>Income growth</li>
-<li>Asset ownership</li>
-<li>Relationship capital</li>
-<li>Professional positioning</li>
-</ul>
-<p><strong>Wealth is leverage.</strong></p>
-</div>
+<p>
+Sustainable body composition and strength<br>
+Metabolic health and longevity<br>
+Mental resilience and emotional stability<br>
+Daily discipline and recovery
+</p>
 
-<div class="card">
-<img src="https://media.giphy.com/media/xT5LMHxhOfscxPfIfm/giphy.gif">
-<h3>Purpose</h3>
-<ul>
-<li>Contribution beyond self</li>
-<li>Mentorship</li>
-<li>Institution building</li>
-<li>Legacy impact</li>
-</ul>
-<p><strong>Purpose is meaning.</strong></p>
-</div>
-
-</div>
+<p><strong>Health is not aesthetics. It is capacity.</strong></p>
 </section>
 
-<section>
+<section class="fade">
+<h2>Wealth</h2>
+<div class="gold-line"></div>
+
+<p><strong>Wealth is more than money. It is leverage and relationships.</strong></p>
+
+<p>TRICH Wealth focuses on:</p>
+
+<p>
+Income growth and capital allocation<br>
+Asset ownership and intelligent risk<br>
+Relationship capital<br>
+Reputation and professional positioning
+</p>
+
+<p><strong>Money gives options. Relationships multiply options.</strong></p>
+</section>
+
+<section class="fade">
+<h2>Purpose</h2>
+<div class="gold-line"></div>
+
+<p><strong>Purpose transforms success into significance.</strong></p>
+
+<p>TRICH Purpose focuses on:</p>
+
+<p>
+Contribution beyond self<br>
+Structured giving and mentorship<br>
+Building institutions, not just income<br>
+Creating impact that outlives you
+</p>
+
+<p><strong>Purpose converts achievement into meaning.</strong></p>
+</section>
+
+<section class="fade">
 <h2>The TRICH Standard</h2>
 <div class="gold-line"></div>
-<p>Each pillar is measurable. Each pillar is trainable. Each pillar compounds.</p>
-<p>The TRICH Diagnostic Score (0–120) evaluates where you stand today.</p>
-<p><strong>The goal is alignment.</strong></p>
-</section>
 
-<section>
-<h2>Discover Your TRICH Score</h2>
-<div class="gold-line"></div>
-<br>
-<a href="YOUR_APP_LINK_HERE">
-<button>Start Diagnostic</button>
-</a>
+<p>Each pillar is measurable.</p>
+<p>Each pillar is trainable.</p>
+<p>Each pillar compounds.</p>
+
+<p>
+The TRICH Diagnostic Score (0–120) evaluates where you stand today and highlights where disciplined growth is required.
+</p>
+
+<p><strong>The goal is not balance. The goal is alignment.</strong></p>
+
+<p>
+When Health fuels Wealth,<br>
+and Wealth funds Purpose,<br>
+life moves from success to significance.
+</p>
+
+<p><strong>TRICH is not motivation. It is a system.</strong></p>
 </section>
 
 <footer>
