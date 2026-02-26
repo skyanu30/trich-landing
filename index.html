@@ -102,75 +102,14 @@ background-repeat:no-repeat;
 box-shadow:0 25px 60px rgba(0,0,0,0.7);
 }
 
-/* RESULT CARDS */
-
-.results-container{
-max-width:700px;
-margin:60px auto 0 auto;
-}
-
-.card{
-background:#111;
-padding:25px;
-border-radius:18px;
-margin-bottom:30px;
-box-shadow:0 15px 40px rgba(0,0,0,0.6);
-border:1px solid #222;
-}
-
-.card h3{
-color:#d4af37;
-margin:0;
-}
-
-.score{
-font-size:14px;
-opacity:0.8;
-margin-top:5px;
-}
-
-.progress{
-width:100%;
-height:14px;
-background:#222;
-border-radius:20px;
-overflow:hidden;
-margin:15px 0;
-}
-
-.fill{
-height:100%;
-width:0;
-border-radius:20px;
-transition:width 1s ease;
-}
-
-.wealth{ background:linear-gradient(90deg,#b8860b,#ffd700); }
-.health{ background:linear-gradient(90deg,#0f766e,#22c55e); }
-.purpose{ background:linear-gradient(90deg,#7c3aed,#c084fc); }
-
-.tier{
-font-weight:bold;
-margin-top:8px;
-color:#d4af37;
-}
-
-.total{
-text-align:center;
-font-size:22px;
-margin-top:30px;
-font-weight:bold;
-color:#d4af37;
-}
-
 /* LADDER */
 
 .ladder{
 max-width:800px;
-margin:40px auto 0 auto;
+margin:50px auto 0 auto;
 text-align:left;
 background:#0e0e0e;
-padding:25px 30px;
+padding:30px;
 border-radius:16px;
 border:1px solid #222;
 box-shadow:0 15px 40px rgba(0,0,0,0.6);
@@ -180,13 +119,13 @@ box-shadow:0 15px 40px rgba(0,0,0,0.6);
 color:#d4af37;
 margin-bottom:20px;
 font-family:'Playfair Display',serif;
-font-size:20px;
+font-size:22px;
 }
 
 .ladder-line{
-margin:8px 0;
+margin:10px 0;
 color:#ccc;
-font-size:15px;
+font-size:16px;
 }
 
 .ladder-line strong{
@@ -236,15 +175,6 @@ Daily discipline and recovery
 
 <p class="highlight">Health is not aesthetics. It is capacity.</p>
 
-<div class="results-container">
-<div class="card">
-<h3>💪 Health Score</h3>
-<div class="score">Score: <span id="healthScore"></span></div>
-<div class="progress"><div class="fill health" id="healthBar"></div></div>
-<div class="tier" id="healthTier"></div>
-</div>
-</div>
-
 <div class="ladder">
 <h4>💪 Health Ladder</h4>
 <div class="ladder-line">Level 5 ───── <strong>Elite / Shredded</strong> (40 pts)</div>
@@ -274,15 +204,6 @@ Reputation and professional positioning
 </p>
 
 <p class="highlight">Money gives options. Relationships multiply options.</p>
-
-<div class="results-container">
-<div class="card">
-<h3>💰 Wealth Score</h3>
-<div class="score">Score: <span id="wealthScore"></span></div>
-<div class="progress"><div class="fill wealth" id="wealthBar"></div></div>
-<div class="tier" id="wealthTier"></div>
-</div>
-</div>
 
 <div class="ladder">
 <h4>💰 Wealth Ladder</h4>
@@ -314,15 +235,6 @@ Creating impact that outlives you
 
 <p class="highlight">Purpose converts achievement into meaning.</p>
 
-<div class="results-container">
-<div class="card">
-<h3>🎯 Purpose Score</h3>
-<div class="score">Score: <span id="purposeScore"></span></div>
-<div class="progress"><div class="fill purpose" id="purposeBar"></div></div>
-<div class="tier" id="purposeTier"></div>
-</div>
-</div>
-
 <div class="ladder">
 <h4>🎯 Purpose Ladder</h4>
 <div class="ladder-line">Level 5 ───── <strong>Systemic Changemaker</strong> (40 pts)</div>
@@ -334,14 +246,9 @@ Creating impact that outlives you
 
 </section>
 
-<section>
-<div class="total" id="totalScore"></div>
-</section>
-
 <footer>
 © 2026 TRICH | Triple Rich – Health, Wealth & Purpose
 </footer>
-
 
 </body>
 </html>
