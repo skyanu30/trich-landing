@@ -45,11 +45,12 @@ position:relative;
 z-index:2;
 max-width:900px;
 }
+
 /* SCROLL ARROW */
 
 .scroll-indicator{
 position:absolute;
-bottom:40px;
+bottom:45px;
 left:50%;
 transform:translateX(-50%);
 z-index:3;
@@ -58,14 +59,14 @@ animation:floatArrow 2s ease-in-out infinite;
 }
 
 .scroll-indicator span{
-font-size:28px;
+font-size:42px; /* slightly bigger */
 color:#d4af37;
 display:block;
 }
 
 @keyframes floatArrow{
 0%{ transform:translate(-50%,0); }
-50%{ transform:translate(-50%,10px); }
+50%{ transform:translate(-50%,12px); }
 100%{ transform:translate(-50%,0); }
 }
 
@@ -129,15 +130,15 @@ color:#d4af37;
 font-weight:600;
 }
 
-/* IMAGE BLOCK */
+/* MEDIUM IMAGE BLOCK */
 
 .image-block{
-width:85%;
-max-width:1000px;
-margin:50px auto;
-border-radius:20px;
+width:65%;               /* reduced from 85% */
+max-width:700px;         /* medium size */
+margin:45px auto;
+border-radius:18px;
 overflow:hidden;
-box-shadow:0 25px 60px rgba(0,0,0,0.7);
+box-shadow:0 20px 50px rgba(0,0,0,0.7);
 }
 
 .image-block img{
@@ -202,39 +203,33 @@ margin-top:100px;
 <h2>Health , Wealth & Purpose</h2>
 
 <div class="hero-text">
-
 <p>
 TRICH is a performance and life architecture framework designed for high-achieving professionals who refuse to be successful in only one dimension of life.
 </p>
-
 <p>
 Most people optimize for income. Some optimize for fitness. Very few intentionally build all three pillars together.
 </p>
-
 <p>
 <strong>TRICH is built on the belief that true wealth is multidimensional.</strong>
 </p>
-
 </div>
 
 </div>
 
-<!-- SCROLL ARROW (OUTSIDE hero-content) -->
 <div class="scroll-indicator" onclick="document.getElementById('health-section').scrollIntoView({behavior:'smooth'});">
 <span>↓</span>
 </div>
 
 </div>
 
-
 <!-- HEALTH -->
 
-<section>
+<section id="health-section">
 <h2>Health</h2>
 <div class="gold-line"></div>
 
 <div class="image-block">
-<img src="heath.png" alt="Health">
+<img src="health.png" alt="Health">
 </div>
 
 <p class="highlight">Without physical energy and mental clarity, achievement collapses.</p>
@@ -323,16 +318,14 @@ Creating impact that outlives you
 
 </section>
 
-  <!-- TRICH STANDARD -->
+<!-- TRICH STANDARD -->
 
 <section>
 <h2>The TRICH Standard</h2>
 <div class="gold-line"></div>
 
 <p>Each pillar is measurable.</p>
-
 <p>Each pillar is trainable.</p>
-
 <p>Each pillar compounds.</p>
 
 <p>
@@ -355,11 +348,9 @@ TRICH is not motivation. It is a system.
 
 </section>
 
-
 <footer>
 © 2026 TRICH | Triple Rich – Health, Wealth & Purpose
 </footer>
 
 </body>
 </html>
-
