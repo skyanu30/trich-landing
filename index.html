@@ -45,6 +45,29 @@ position:relative;
 z-index:2;
 max-width:900px;
 }
+/* SCROLL ARROW */
+
+.scroll-indicator{
+position:absolute;
+bottom:40px;
+left:50%;
+transform:translateX(-50%);
+z-index:3;
+cursor:pointer;
+animation:floatArrow 2s ease-in-out infinite;
+}
+
+.scroll-indicator span{
+font-size:28px;
+color:#d4af37;
+display:block;
+}
+
+@keyframes floatArrow{
+0%{ transform:translate(-50%,0); }
+50%{ transform:translate(-50%,10px); }
+100%{ transform:translate(-50%,0); }
+}
 
 .logo{
 width:150px;
@@ -169,6 +192,7 @@ margin-top:100px;
 <!-- HERO -->
 
 <div class="hero">
+
 <div class="hero-content">
 
 <img src="logo.png" class="logo" alt="TRICH Logo">
@@ -194,7 +218,14 @@ Most people optimize for income. Some optimize for fitness. Very few intentional
 </div>
 
 </div>
+
+<!-- SCROLL ARROW (OUTSIDE hero-content) -->
+<div class="scroll-indicator" onclick="document.getElementById('health-section').scrollIntoView({behavior:'smooth'});">
+<span>↓</span>
 </div>
+
+</div>
+
 
 <!-- HEALTH -->
 
@@ -331,3 +362,4 @@ TRICH is not motivation. It is a system.
 
 </body>
 </html>
+
