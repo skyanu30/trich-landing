@@ -15,7 +15,6 @@ background:black;
 font-family:'Montserrat',sans-serif;
 color:#ccc;
 line-height:1.8;
-overflow-x:hidden;
 }
 
 /* HERO */
@@ -46,8 +45,8 @@ z-index:2;
 }
 
 .logo{
-width:130px;
-margin-bottom:20px;
+width:150px;
+margin-bottom:25px;
 }
 
 h1{
@@ -59,7 +58,7 @@ margin:0;
 
 h2{
 font-family:'Playfair Display',serif;
-font-size:36px;
+font-size:38px;
 color:#d4af37;
 margin-bottom:20px;
 }
@@ -74,12 +73,11 @@ margin:25px auto;
 section{
 padding:100px 12%;
 text-align:center;
-background:black;
 }
 
 p{
 max-width:850px;
-margin:15px auto;
+margin:18px auto;
 font-size:18px;
 }
 
@@ -88,42 +86,45 @@ color:#d4af37;
 font-weight:600;
 }
 
-/* Motion */
+/* IMAGE BLOCK */
 
-.motion{
+.image-block{
 width:85%;
-max-width:1100px;
-height:360px;
+max-width:1000px;
 margin:50px auto;
-border-radius:18px;
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
+border-radius:20px;
+overflow:hidden;
 box-shadow:0 25px 60px rgba(0,0,0,0.7);
+}
+
+.image-block img{
+width:100%;
+height:auto;
+display:block;
 }
 
 /* LADDER */
 
 .ladder{
 max-width:800px;
-margin:50px auto 0 auto;
+margin:60px auto 0 auto;
 text-align:left;
 background:#0e0e0e;
-padding:30px;
-border-radius:16px;
+padding:35px;
+border-radius:18px;
 border:1px solid #222;
 box-shadow:0 15px 40px rgba(0,0,0,0.6);
 }
 
 .ladder h4{
 color:#d4af37;
-margin-bottom:20px;
+margin-bottom:25px;
 font-family:'Playfair Display',serif;
-font-size:22px;
+font-size:24px;
 }
 
 .ladder-line{
-margin:10px 0;
+margin:12px 0;
 color:#ccc;
 font-size:16px;
 }
@@ -133,7 +134,7 @@ color:#d4af37;
 }
 
 footer{
-padding:40px;
+padding:50px;
 text-align:center;
 border-top:1px solid #222;
 color:#777;
@@ -149,7 +150,7 @@ margin-top:100px;
 
 <div class="hero">
 <div class="hero-content">
-<img src="./logo.png" class="logo">
+<img src="logo.png" class="logo">
 <h1>TRICH (Triple Rich)</h1>
 <div class="gold-line"></div>
 <h2>Health , Wealth & Purpose</h2>
@@ -162,7 +163,9 @@ margin-top:100px;
 <h2>Health</h2>
 <div class="gold-line"></div>
 
-<div class="motion" style="background-image:url('./heath.png');"></div>
+<div class="image-block">
+<img src="health.gif" alt="Health">
+</div>
 
 <p class="highlight">Without physical energy and mental clarity, achievement collapses.</p>
 
@@ -192,7 +195,9 @@ Daily discipline and recovery
 <h2>Wealth</h2>
 <div class="gold-line"></div>
 
-<div class="motion" style="background-image:url('./wealth.png');"></div>
+<div class="image-block">
+<img src="wealth.gif" alt="Wealth">
+</div>
 
 <p class="highlight">Wealth is more than money. It is leverage and relationships.</p>
 
@@ -222,7 +227,9 @@ Reputation and professional positioning
 <h2>Purpose</h2>
 <div class="gold-line"></div>
 
-<div class="motion" style="background-image:url('./purpose.png');"></div>
+<div class="image-block">
+<img src="purpose.gif" alt="Purpose">
+</div>
 
 <p class="highlight">Purpose transforms success into significance.</p>
 
@@ -252,5 +259,3 @@ Creating impact that outlives you
 
 </body>
 </html>
-
-
