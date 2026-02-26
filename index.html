@@ -20,13 +20,14 @@ line-height:1.8;
 /* HERO */
 
 .hero{
-height:100vh;
+min-height:100vh;
 background:url('https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3') center/cover no-repeat;
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
 position:relative;
+padding:60px 20px;
 }
 
 .hero::after{
@@ -36,12 +37,13 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background:rgba(0,0,0,0.75);
+background:rgba(0,0,0,0.78);
 }
 
 .hero-content{
 position:relative;
 z-index:2;
+max-width:900px;
 }
 
 .logo{
@@ -60,7 +62,7 @@ h2{
 font-family:'Playfair Display',serif;
 font-size:38px;
 color:#d4af37;
-margin-bottom:20px;
+margin-bottom:30px;
 }
 
 .gold-line{
@@ -69,6 +71,24 @@ height:2px;
 background:#d4af37;
 margin:25px auto;
 }
+
+/* HERO TEXT */
+
+.hero-text{
+margin-top:30px;
+font-size:18px;
+color:#ddd;
+}
+
+.hero-text p{
+margin:18px 0;
+}
+
+.hero-text strong{
+color:#d4af37;
+}
+
+/* SECTIONS */
 
 section{
 padding:100px 12%;
@@ -150,10 +170,29 @@ margin-top:100px;
 
 <div class="hero">
 <div class="hero-content">
-<img src="logo.png" class="logo">
+
+<img src="logo.png" class="logo" alt="TRICH Logo">
+
 <h1>TRICH (Triple Rich)</h1>
 <div class="gold-line"></div>
 <h2>Health , Wealth & Purpose</h2>
+
+<div class="hero-text">
+
+<p>
+TRICH is a performance and life architecture framework designed for high-achieving professionals who refuse to be successful in only one dimension of life.
+</p>
+
+<p>
+Most people optimize for income. Some optimize for fitness. Very few intentionally build all three pillars together.
+</p>
+
+<p>
+<strong>TRICH is built on the belief that true wealth is multidimensional.</strong>
+</p>
+
+</div>
+
 </div>
 </div>
 
@@ -253,10 +292,42 @@ Creating impact that outlives you
 
 </section>
 
+  <!-- TRICH STANDARD -->
+
+<section>
+<h2>The TRICH Standard</h2>
+<div class="gold-line"></div>
+
+<p>Each pillar is measurable.</p>
+
+<p>Each pillar is trainable.</p>
+
+<p>Each pillar compounds.</p>
+
+<p>
+The TRICH Diagnostic Score (0–120) evaluates where you stand today and highlights where disciplined growth is required.
+</p>
+
+<p class="highlight">
+The goal is not balance. The goal is alignment.
+</p>
+
+<p>
+When Health fuels Wealth,<br>
+and Wealth funds Purpose,<br>
+life moves from success to significance.
+</p>
+
+<p class="highlight">
+TRICH is not motivation. It is a system.
+</p>
+
+</section>
+
+
 <footer>
 © 2026 TRICH | Triple Rich – Health, Wealth & Purpose
 </footer>
 
 </body>
 </html>
-
